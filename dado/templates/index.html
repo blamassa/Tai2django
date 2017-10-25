@@ -9,14 +9,16 @@
     <body>
         <div>
             <h1><a href="/">Dados</a></h1>
+            
         </div>
 
         {% for dado in dado %}
             <div>
-                <p>Data: {{ dado.data }}</p>
+                <p>Data: {{ dado.data|date:"d/m/Y" }}</p>
                 <p>Massa: {{ dado.massa }}</p>
                 <p>Hexano: {{ dado.hexano }}</p>
                 <p>Oleo: {{ dado.oleo }}</p>
+                <p>Relação: {{ dado.relacao }}</p>
                 <p>{{ dado.massa|linebreaksbr }}</p>
             </div>
         {% endfor %}

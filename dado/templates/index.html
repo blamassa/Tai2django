@@ -1,0 +1,24 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Dados</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Dados</a></h1>
+        </div>
+
+        {% for dado in dado %}
+            <div>
+                <p>Data: {{ dado.data }}</p>
+                <p>Massa: {{ dado.massa }}</p>
+                <p>Hexano: {{ dado.hexano }}</p>
+                <p>Oleo: {{ dado.oleo }}</p>
+                <p>{{ dado.massa|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
+    </body>
+</html>

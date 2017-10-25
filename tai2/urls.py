@@ -19,5 +19,5 @@ from dado import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.dado)
+    url(r'^$', views.dado) 
 ]

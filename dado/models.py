@@ -13,7 +13,16 @@ class Dado(models.Model):
 
 
 	def __str__(self):
-		return self.massa
+    		return self.massa
+
+	def get_massa(self):
+    		return self.massa
+	
+	def get_hexano(self):
+    		return self.massa
+	
+	def get_oleo(self):
+    		return self.oleo
 
     #def __str__(self):
     #    return self.massa	

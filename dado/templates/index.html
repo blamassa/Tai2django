@@ -27,8 +27,9 @@
             <tr>
                 <th>Data</th>
                 <th>Massa de café(g)</th>
-                <th>Volume de hexano utilizado</th>
-                <th>Volume do óleo obtido</th>
+                <th>Volume de hexano utilizado(ml)</th>
+                <th>Volume do óleo obtido(ml)</th>
+                <th>Eficiência da extração(%)</th>
             </tr>
             {% for dado in dado %}
             <tr>
@@ -36,6 +37,7 @@
                 <th>{{ dado.massa }}</th>
                 <th>{{ dado.hexano }}</th>
                 <th>{{ dado.oleo }}</th>
+                <th>{{ dado.relacao }}</th>
                 <!--<th>{{ dado.massa|linebreaksbr }}</th>-->
             </tr>
             {% endfor %}

@@ -5,7 +5,7 @@ import datetime
 # Create your views here.
 
 def dado(request):
-	dado = Dado.objects.order_by('data')
+	dado = Dado.objects.order_by('relacao')
 	#oleo = dado.objects.all().oleo
 	#massa = dado.objects.all().massa
 	#relacao = (84.6*oleo)/(massa)
